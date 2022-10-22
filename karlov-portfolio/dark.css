@@ -1,0 +1,56 @@
+
+:root{
+  --check: rgb(240, 240, 240);
+  --padrao: rgb(23, 23, 23);
+  --ball: rgb(23, 23, 23);
+}
+.dark{
+  --padrao: rgb(240, 240, 240);
+  --check: rgb(23, 23, 23);
+  --ball: rgb(240, 240, 240);
+}
+
+
+
+.dark-mode{
+  display:flex;
+  position: fixed;
+  width:100vw;
+  height:10vh;
+  justify-content: flex-end;
+  margin: 2vh -2vw;
+  align-items:center;
+  transition: .5s;
+  z-index: 99999;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.checkbox{
+  opacity:0;
+  position:absolute;
+}
+
+.label{
+  width:50px;
+  cursor: pointer;
+  height:26px;
+  background: var(--padrao);
+  border-radius: 50px;
+  padding: 5px;
+  position:relative;
+}
+
+.ball{
+  position:absolute;
+  top:2px;
+  left:2px;
+  width:22px;
+  height:22px;
+  background: var(--check);
+  border-radius:50%;
+  
+  transition: transform 0.2s linear;
+}

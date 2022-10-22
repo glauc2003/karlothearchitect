@@ -1,0 +1,454 @@
+
+body {
+  animation-name: pocetak;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background-color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.fullimg {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
+.fullimg {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
+
+
+.vanish-left {
+  transform: translateX(-50vw);
+  transition: 1s;
+}
+
+.vanish-right {
+  transform: translateX(50vw);
+  transition: 1s;
+}
+
+.fulldotleft {
+  transform: translateX(45vw);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.fulldotright {
+  transform: translateX(-45vw);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+@keyframes pocetak {
+  0% {transform: translateX(-150vw);}
+  100% {transform: translateX(0vw);}
+}
+
+.ms-left .ms-left .ms-section div {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+}
+
+
+.ms-section {
+  width: 100%;
+  margin-top: -2vh;
+  transition: 0.5s;
+}
+
+
+.fullscreen {
+  transition: 1s;
+  width: 100% !important;
+  
+}
+
+
+.fullscreenalt {
+  transition: 1s;
+    width: 99% !important;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.noscreen {
+  transition: 1s;
+  width: 1% !important;
+}
+
+
+
+@keyframes full {
+  0% {  width: 0% !important;}
+  100% {  width: 100% !important;}
+}
+
+
+
+.ms-right  .ms-section div {
+  background-size: 22px 22px; 
+  display: flex;
+  align-items: center;
+  background: white!important;
+
+
+  justify-content: center;
+}
+
+.ms-left .ms-section div{
+
+  background: white;
+  background-size: 22px 22px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ms-left {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.ms-right {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+
+
+.colornav {
+  background: white !important;
+}
+
+
+.title {
+  color: white;
+  z-index: 99999999999;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 12vh;
+}
+
+.titlebg {
+  position: absolute;
+  z-index: 9999;
+  opacity: 0.03 ;
+  transition: 1s;
+  font-size: 15rem;
+  font-weight: 700;
+  top: 5vh;
+  mix-blend-mode: difference ;
+}
+
+.h1 {
+  z-index: 999999;
+  transition: 1s;
+  font-weight: 600;
+  font-size: 6rem;
+  font-family: montserrat;
+  mix-blend-mode: difference;
+}
+
+.ms-section .ms-table {
+  height: 50%;
+}
+
+#multiscroll-nav {
+  left: 1.2rem;
+  top: 57vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+#multiscroll-nav li {
+  display: flex;
+   margin: 3vh 0rem;
+
+  position: relative;
+  
+
+} 
+
+
+.blackdot {
+  background: black;
+
+
+}
+
+#multiscroll-nav li .active span {
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-fill-mode:both ;
+  background-color: white;
+  border: 1.5px solid black ;
+  
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(90deg);}
+}
+
+
+#multiscroll-nav.right {
+  display: flex;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80vw;
+  z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+.plus {
+  font-size: 1.7rem;
+  margin-top: 0.3rem;
+  text-align: center;
+  font-family: raleway;
+  letter-spacing: 0.2rem;
+}
+
+.plus:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.divimg {
+  cursor: pointer;
+  z-index: 99999;
+  display: flex ;
+  width: 40vw;
+  height: 55vh;
+  overflow: hidden;
+  margin-top: 10vh;
+  background-color: red;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#divimgrightone {
+
+}
+
+
+.img {
+  height: 100%;
+  z-index: 99999999999999;
+  transform: scale(1);
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+
+.img:hover {
+  transform: scale(1.1);
+
+}
+
+.navigation1 {
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 99999;
+    
+
+}
+.navigation1 ul {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.5vw;
+  
+}
+
+.navigation1 ul li span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    text-align: center;
+    
+    
+}
+
+.textdiv {
+  position: absolute;
+  height: 40vh;
+  bottom: -30vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  left: 0;
+
+}
+
+.textp {
+  color: black;
+  font-family: raleway;
+  font-weight: 100;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0vw 15vw;
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  z-index: 9999999999999999999999999999999999;
+  
+}
+
+
+
+
+
+.logo {
+  font-size: 3rem;
+  top: 1.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  z-index: 9999999999999999999999999999999999;
+  font-family: Raleway;
+  text-align: center;
+  position: fixed;
+  font-weight: 500;
+}
+
+
+.surname {
+  z-index: 999999;
+  font-weight: 700;
+  mix-blend-mode: difference;
+}
+
+.up {
+  color: var(--padrao);
+
+}
+
+
+.down {
+  color: var(--padrao);
+
+}
+.why-multiscroll-container {
+  
+}
+
+#multiscroll-nav span {
+  background: black;
+  position: absolute;
+  border: none;
+  left: -0VW;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: scale(0.7);
+  border: 2px solid black ;
+  background-color: white;
+}
+
+#multiscroll-nav span a {
+  margin: 20vw;
+}
+
+.lift {
+  transform: translateY(-10vh) scale(0.8);
+}
+
+
+.lifttext {
+  transform: translateY(-30vh);
+}
+
+.back {
+  position: absolute;
+  z-index: 99999999;
+  right: 5rem;
+  top: 4.5rem;
+}
+
+.material-symbols-outlined {
+  transform: rotate(90deg) scale(1.5);
+  transition: 0.5s;
+  
+}
+
+.material-symbols-outlined:hover {
+  transform: rotate(90deg) scale(1.7);
+  cursor: pointer;
+  
+}
