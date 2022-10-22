@@ -1,0 +1,8 @@
+
+		article {
+			position: relative;
+			height: 22vw;
+			transform-style: preserve-3d;
+      box-shadow: 0 25px 35px 0 rgba(22,25,42,.05);
+		}
+
