@@ -263,12 +263,12 @@ a:hover {
   color: var(--padrao);
 }
 
+@media all and (max-width: 800px) {
 
-@media only screen and (max-width: 800px) {
   .gallery {
-    transform: rotate(90deg);
+    transform: rotate(90deg)!important;
 	position: absolute;
-  width: 70%;
+    width: 70%;
 	overflow: visible;
   }
 
