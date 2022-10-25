@@ -10,14 +10,14 @@
  */
 
 
-
 #menuToggle
 {
   display: block;
   position: fixed;
-  top: 50px;
+  top: 37px;
   left: 50px;
-  
+
+
   z-index: 99999999999;
   
   -webkit-user-select: none;
@@ -30,9 +30,9 @@
 {
   text-decoration: none;
   color:  var(--check);
-  transition: color 0.3s ease;
+  transition: 0.5s color 0.3s ease;
   opacity: 0.8;
-  transition: 0.5s;
+
 }
 
 #menuToggle a:hover
@@ -126,7 +126,7 @@
 #menu
 {
   position: fixed;
-  width: 23 vw;
+  width: 23vw;
   height: 105vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
