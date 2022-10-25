@@ -267,6 +267,9 @@ a:hover {
 @media only screen and (max-width: 800px) {
   .gallery {
     transform: rotate(90deg);
+	position: absolute;
+  width: 70%;
+	overflow: visible;
   }
 
   .cards li {
@@ -274,72 +277,65 @@ a:hover {
 
   }
 
-  
-.gallery {
-	position: absolute;
-  width: 70%;
-	overflow: visible;
-}
+    .cards {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2);
+    }
 
-.cards {
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(2);
-}
+    .cards li {
+        list-style: none;
+        padding: 0;
+      width: 15vh;
+      display: flex;
+      justify-content: center;
+        height: 15vw;
+        text-align: center;
+        line-height: 18rem;
+        font-size: 2rem;
+        font-family: sans-serif;
+        position: absolute;
+        top: -5vw;
+        left: 3vh;
+        border-radius: 0.8rem;
+    }
 
-.cards li {
-	list-style: none;
-	padding: 0;
-  width: 15vh;
-  display: flex;
-  justify-content: center;
-	height: 15vw;
-	text-align: center;
-	line-height: 18rem;
-	font-size: 2rem;
-	font-family: sans-serif;
-	position: absolute;
-	top: -5vw;
-	left: 3vh;
-	border-radius: 0.8rem;
-}
-  
-.projectimg {
-  width: 100%!important;
-  height: auto !important;
+    .projectimg {
+      width: 100%!important;
+      height: auto !important;
 
-  overflow: hidden;
-  transform: translateY(-6vh);
-}
+      overflow: hidden;
+      transform: translateY(-6vh);
+    }
 
-article {
-  width: 40vw !important;
-  height: 13vh !important;
-  overflow: hidden;
-}
+    article {
+      width: 40vw !important;
+      height: 13vh !important;
+      overflow: hidden;
+    }
 
-.content {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 0vh;
-    left: -2vw;
-    transform: translateX(-20rem) translateY(20vh) scale(0.5);
-    width: 100vh;
-    height: 100vw;
-    z-index: 999999999999999999999999999999;
-    cursor: pointer;
-    gap: 2vw;
-}
+    .content {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 0vh;
+        left: -2vw;
+        transform: translateX(-20rem) translateY(20vh) scale(0.5);
+        width: 100vh;
+        height: 100vw;
+        z-index: 999999999999999999999999999999;
+        cursor: pointer;
+        gap: 2vw;
+    }
 
-.o-left {
-  width: 100vw;
-  height: 20vh;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
-}
+    .o-left {
+      width: 100vw;
+      height: 20vh;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      opacity: 0.5;
+    }
 
 }
