@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|IBM+Plex+Sans:500&display=swap");
+:root {
+  --color-primary: #56677E;
+  --color-secondary: #101118;
+  --base-duration: 500ms;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+
+.slide {
+  --x: 0;
+  --y: 0;
+  --d: 50;
+}
+.slide:hover .slide__image-wrapper {
+  transform: scale(1.025) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+}
+
+.slide__image {
+  --d: 20;
+  transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+
+
+.slide {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 75vmin;
+  z-index: 1;
+}
+.slide:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.slide__image-wrapper {
+  border-radius: 1%;
+  height: 100%;
+  left: 0%;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  transition: transform calc(var(--base-duration) / 4) var(--base-ease);
+  width: 100%;
+}
+
+.slide__image {
+  --d: 20;
+  height: 110%;
+  left: -5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: -5%;
+  transition: transform var(--base-duration) var(--base-ease);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 110%;
+}
+
+.slide__headline {
+  font-size: 8vmin;
+  font-weight: 600;
+  position: relative;
+}
+
+.slide__content {
+  --d: 60;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 4vmin;
+  position: absolute;
+  top: 0;
+  transition: transform var(--base-duration) var(--base-ease);
+  width: 100%;
+  z-index: 1;
+}
+.slide__content > * + * {
+  margin-top: 2rem;
+}
+
+.display-coordinates .coordinates-overlay,
+.display-coordinates .slide:hover .coordinates-tooltip {
+  display: block;
+}
+
+.coordinates-checkbox {
+  align-items: center;
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 1rem;
+}
+.coordinates-checkbox label {
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.coordinates-tooltip {
+  color: red;
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 100;
+}
+.coordinates-tooltip::after {
+  counter-reset: x var(--x) y var(--y);
+  content: "x: " counter(x) ", y: " counter(y);
+}
+
+.coordinates-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+.coordinates-overlay:before, .coordinates-overlay:after {
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.coordinates-overlay:before {
+  transform: translate(-50%, -50%);
+}
+.coordinates-overlay:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}

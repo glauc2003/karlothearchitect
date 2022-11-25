@@ -1,0 +1,142 @@
+
+.vert {
+  color: black;
+  text-align: center;
+  font-family: kano;
+  margin-top: 35rem;
+  position: relative;
+  margin-left: -20rem;
+  left: 10rem;
+}
+
+
+.fotka {
+    align-items: center;
+    width: 25vw;
+    margin-top: 250px;
+}
+
+h1 {
+    color: rgb(98, 98, 98);
+    transform: rotate(90deg);
+    font-family: montserrat;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: -8rem;
+  }
+
+
+.dnt-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.dnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+
+.dndiv {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10rem;
+    flex-direction: column;
+    border-right: 2px solid black;
+    padding-right: 2rem;
+    width: 14rem;
+}
+
+
+.dndiv :nth-child(1) {
+    margin-top: 0.7rem;
+}
+
+
+.dndiv :nth-child(2) {
+    margin-top: 8.5rem;
+}
+
+.dndiv :nth-child(3) {
+    margin-top: 8.5rem;
+}
+
+.dndiv :nth-child(4) {
+    margin-top: 12.5rem;
+}
+
+.dndiv :nth-child(5) {
+    margin-top: 3.5rem;
+}
+
+
+.dndiv :nth-child(6) {
+    margin-top: 3.5rem;
+}
+
+
+
+.dn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.d {
+    display: flex;
+    margin: 0.5rem;
+    font-size: 1rem;
+    flex-direction: row;
+    font-family: montserrat;
+    font-weight: 600;
+
+}
+
+.n {
+    display: flex;
+    font-weight: 500;
+
+    font-family: montserrat;
+    flex-direction: row;
+    font-size: 1.3rem;
+
+}
+
+.tdiv {
+
+    padding-left: 0rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 10rem;
+}
+
+.tb {
+    display: flex;
+    line-height: 1.2rem;
+    margin-top: 01rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: montserrat;
+
+}
+
+
+.tt {
+    display: flex;
+    line-height: 1.2rem;
+    margin-top: 01rem;
+    font-size: 0.8rem;
+    font-family: montserrat;
+    font-weight: 300;
+}
+
+
+.aboutdiv {
+    display: flex;
+    justify-content: center;
+}
