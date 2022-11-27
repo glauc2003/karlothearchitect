@@ -9,6 +9,11 @@
   left: 10rem;
 }
 
+#mailp {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .fotka {
     align-items: center;
