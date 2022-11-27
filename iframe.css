@@ -224,7 +224,7 @@ body{
 	background-image: url("1.png");
 }
 .case-study-images li:nth-child(4) .img-hero-background{
-	background-image: url("WhatsApp Image 2022-11-23 at 20.57.05.jpeg");
+	background: rgb(0, 0, 0);
 }
 
 /* #Media
