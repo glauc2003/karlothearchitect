@@ -64,8 +64,8 @@ h1, h2, h3 {
 
 .slide__image {
   --d: 20;
-  height: 110%;
-  left: -5%;
+
+  left: 0%;
   -o-object-fit: cover;
      object-fit: cover;
   pointer-events: none;
@@ -76,7 +76,7 @@ h1, h2, h3 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  width: 110%;
+  width: 100%;
 }
 
 .slide__headline {
