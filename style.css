@@ -398,6 +398,11 @@ o
   margin-left: 30px;
 }
 
+.gumbi {
+  display: flex;
+  flex-direction: row !important;
+}
+
 
 .btn,
 button {
