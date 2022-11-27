@@ -33,12 +33,15 @@
   position: fixed; 
   width: 0%;
   margin-left: 8rem;
-  z-index: 2;
+  z-index: 500;
 }
-.staticfixfour {
-    transform: translateX(55vw) scale(1.5);
-    opacity: 0;
-  }
+
+.nestane {
+  transform: translateX(23vw) scale(1.3);
+  opacity: 1;
+
+}
+
 
 
 </style>
@@ -84,7 +87,7 @@
 
   <div class="gumbi">
     <div class="gumbnext" >
-      <a href="javascript:setTimeout(()=>{window.location = 'skyline.html' },500);" >
+      <a href="javascript:setTimeout(()=>{window.location = 'automated-city.html' },500);" >
     <button class="btn2 btn-border2">
     <img class="nextpr" src="noun-arrow-3134100.png">
     </button>
@@ -113,7 +116,7 @@
   <div class="ms-left" id="left">
     <div class="ms-section">
       <div id="divimgleftone" class="divimg">
-      <img id="imgleftone" class="img" src="_stranica/5_Automated City/AC_lijevo_1.png">
+      <img id="imgleftone" class="img"  src="_stranica/5_Automated City/AC_lijevo_1.png">
       </div>
     </div>
     <div class="ms-section" >
@@ -179,7 +182,7 @@
     $("#imgleftone").click(function(){
       $("#divimgleftone").toggleClass("staticfixfour");
     });
-  });
+  }); 
   
   
   $(document).bind('mousemove', function(e){
@@ -198,7 +201,13 @@ $(document).ready(function(){
 
   $(document).ready(function(){
 	$(".divimg").click(function(){
-	  $(".nes").toggleClass("nestane");
+	  $("#divimgleftone").toggleClass("nestane");
+	});
+  });
+
+  $(document).ready(function(){
+	$("#imgrightone, #imgrighttwo, #imgrightthree").click(function(){
+	  $("#divimgleftone").toggleClass("nestane");
 	});
   });
 
