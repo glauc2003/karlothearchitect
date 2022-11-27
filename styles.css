@@ -282,7 +282,15 @@ body {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+  animation-name: fixload;
+  animation-duration: 1.5s;
 }
+
+@keyframes fixload {
+  0% {opacity: 0;}
+  99% {opacity: 1;}
+}
+
 
 
 
