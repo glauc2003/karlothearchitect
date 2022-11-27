@@ -16,8 +16,8 @@
 
 .menu {
   position: fixed;
-  padding: 40px 0rem 40px 0rem; 
-  z-index: 100;
+  padding: 40px 0rem 0px 0rem; 
+  z-index: 99999 !important;
   
   display: flex;
   flex-direction: row;
@@ -55,8 +55,8 @@ body {
 
 .cards {
 	position: absolute;
-	width: 40rem;
-	height: 25rem;
+	width: 45vw;
+	height: 50vh;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -67,7 +67,7 @@ body {
 
 .cards li {
 	list-style: none;
-  width: 40rem;
+  width: 45vw;
 	margin: 0;
 
 	text-align: center;
@@ -92,14 +92,67 @@ body {
 	margin: 50px auto;
 }
 
+.scroll {
+  position: fixed;
+  display: flex;
+  z-index: 99999;
+  font-family: montserrat;
+  font-size: 0.9rem;
+  font-weight: 200;
+  right: 4rem;
+  bottom: 3rem;
+  animation-name: upute;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes upute {
+  0% {opacity: 0;}
+  3% {opacity: 1;}
+  20% {opacity: 1;}
+  22% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+
+
+
+.simg {
+  width: 2vw;
+  position: absolute;
+  opacity: 0;
+}
+
+.si :nth-child(1) {
+  width: 2vw;
+  opacity: 0;
+  position: absolute;
+}
+
+o
+
+.si :nth-child(3) {
+  width: 2vw;
+  opacity: 0;
+  position: absolute;
+}
+
+.si :nth-child(2) {
+  width: 2vw;
+  opacity: 0;
+  position: absolute;
+}
 
 
 .titlediv {
   position: absolute; 
   z-index: 90999999;
   width: 100%;
-  top: 50vh;
-  transform: translateY(8rem);
+  top: 70vh;
+  transform: translateY(-2rem);
   justify-content: center;
 }
 
@@ -158,8 +211,8 @@ body {
 }
 
 .slide__image-wrapper {
-  height: 25rem !important; 
-  width: 40rem  !important; 
+  height: 50vh !important; 
+  width: 45vw  !important; 
   border-radius: 0 !important;
 }
 
@@ -216,9 +269,14 @@ body {
 
 .icon {
   width: 1.6rem;
-  opacity: 0.5;
-  z-index: 99;
+  opacity: 1;
+  z-index: 999;
   transition: 0.3s;
+}
+
+.menu:hover .icon {
+  filter: invert(1);
+  transition-delay: 0.25s;
 }
 
 .icon:hover {
@@ -345,6 +403,7 @@ body {
 button {
   transform: translateX(-60px);
   background: blue;
+  z-index: 1;
   border: none;
   font-size: 10px;
   font-size: 10px;
@@ -415,6 +474,59 @@ button:hover {
   right: -2rem;
 }
 
+
+
 .home:hover .hamgurber  {
   opacity: 0;
+}
+
+
+.wipe {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999999;
+  background-color: black;
+  animation-name: wipe;
+  opacity: 1;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  transform: translateX(0vw);
+  overflow: hidden;
+}
+
+
+
+
+.h1top {
+  font-size: 2.8rem !important;
+  margin: -0.4rem 0 0 0 !important;
+  text-align: ceter;
+  font-family: kano;
+}
+
+@keyframes wipe{
+   0% {transform: translateX(0vw)}
+   100% {transform: translateX(-100vw)}
+}
+
+.wipeout {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999999999999999999;
+  background-color: black;
+  transform: translateX(-100vw);
+
+}
+
+.wipean {
+  animation-name: wipeout;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes wipeout{
+  0% {transform: translateX(-100vw)}
+  100% {transform: translateX(0vw)}
 }

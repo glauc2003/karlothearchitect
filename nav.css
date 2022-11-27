@@ -15,11 +15,13 @@
 
 .icon {
   position: absolute;
+  top: -15px;
 }
 
 .iconimg {
   transform: rotate(180deg) ;
   width: 70px;
+  filter: brightness(0) contrast(1);
 }
 
 
