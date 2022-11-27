@@ -13,7 +13,12 @@
 .fotka {
     align-items: center;
     width: 25vw;
-    margin-top: 250px;
+    margin-top: 12rem;
+}
+
+#drugi {
+    position: absolute;
+    margin-left: -15rem;
 }
 
 h1 {
@@ -29,66 +34,126 @@ h1 {
 .dnt-div {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
 }
 
 
 .dnt {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 4rem;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
+.dndiv2 {
+    right: 20vw;
+    position: absolute;
+    transform: translateY(-40rem) translateX(43%);
+}
 
 .dndiv {
     display: flex;
     gap: 2rem;
     margin-top: 10rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border-right: 2px solid black;
-    padding-right: 2rem;
+    margin-right: 1rem;
+    align-items: flex-start;
     width: 14rem;
+}
+
+.abouticonone {
+    height: 1.5rem;
+}
+
+
+.abouticontwo {
+    height: 2rem;
+}
+
+.aboutleft {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutleftp {
+    display: flex;
+    flex-direction: row;
+    font-family: kano;
+    align-items: center;
+    width: 25vw;
+    margin: 0rem;
+}
+
+.edu {
+    margin: 0rem 0rem;
+
+}
+
+#mp {
+    margin-top: -1rem;
+}
+
+#bp {
+    margin-top: -1rem;
+}
+
+.edutitle {
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-weight: 200;
+}
+
+
+.mail {
+    margin: 0rem;
 }
 
 
 .dndiv :nth-child(1) {
-    margin-top: 0.7rem;
+    margin-top: 1rem;
 }
 
 
 .dndiv :nth-child(2) {
-    margin-top: 8.5rem;
+    margin-top: 11.5rem;
+    margin-bottom: 7rem;
 }
 
 .dndiv :nth-child(3) {
-    margin-top: 8.5rem;
+    margin-top: 3.5rem;
 }
 
 .dndiv :nth-child(4) {
-    margin-top: 12.5rem;
+    margin-top: 3.5rem;
 }
 
 .dndiv :nth-child(5) {
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
 }
 
 
 .dndiv :nth-child(6) {
-    margin-top: 3.5rem;
+    margin-top: 1rem;
 }
+
+
 
 
 
 .dn {
     display: flex;
     flex-direction: column;
+
+    top: 0;
 }
 
 
 .d {
     display: flex;
+    align-items: flex-start;
     margin: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     flex-direction: row;
     font-family: montserrat;
     font-weight: 600;
@@ -101,7 +166,7 @@ h1 {
 
     font-family: montserrat;
     flex-direction: row;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
 }
 
@@ -110,7 +175,7 @@ h1 {
     padding-left: 0rem;
     width: 25rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
     margin-top: 10rem;
 }
@@ -119,7 +184,7 @@ h1 {
     display: flex;
     line-height: 1.2rem;
     margin-top: 01rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     font-family: montserrat;
 
@@ -138,5 +203,6 @@ h1 {
 
 .aboutdiv {
     display: flex;
-    justify-content: center;
+    margin-top: 3rem;
+    justify-content: space-around;
 }
