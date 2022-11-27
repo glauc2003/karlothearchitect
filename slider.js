@@ -31,7 +31,7 @@
         });
       });
 
-      this.el.addEventListener('mouseenter', () => self.autoPlay = true);
+      this.el.addEventListener('mouseenter', () => self.autoPlay = false);
       this.el.addEventListener('mouseleave', () => self.autoPlay = true);
 
       setInterval(function () {
