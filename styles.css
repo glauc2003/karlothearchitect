@@ -508,7 +508,36 @@ button:hover {
   background-color: transparent;
   color: #1d1d1d;
 }
-.btn-arrow {
+
+.btn2 {
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+  left: 0;
+}
+
+.btn2:hover .nextpr {
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+.gumbi {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn2:hover,
+button:hover {
+  background: #2a2a2a;
+  border-color: #2a2a2a;
+  color: #fff;
+}
+.btn2-border {
+  background-color: transparent;
+  color: #1d1d1d;
+}.btn-arrow {
   position: relative;
   transition: background-color 300ms ease-out;
 }
@@ -539,6 +568,11 @@ button:hover {
 .btn-arrow:hover svg {
   opacity: 1;
   right: -2rem;
+}
+
+.nextpr {
+  width: 1rem;
+  transition: 0.3s;
 }
 
 
@@ -579,11 +613,17 @@ button:hover {
   display: flex;
   gap: 0.5rem;
   z-index: 9999999999999999999999999;
+  animation-name: fsnestane;
+  animation-duration: 0.5s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  
   }
   
   #tail p {
       margin: 0px;
   }
+
   
   
   .divimg:hover  #tail {
@@ -595,7 +635,10 @@ button:hover {
   }
 
 
-
+@keyframes fsnestane {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
 
 .wipe {
   position: fixed;
@@ -607,7 +650,7 @@ button:hover {
   opacity: 1;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
   transform: translateX(0vw);
   overflow: hidden;
 }

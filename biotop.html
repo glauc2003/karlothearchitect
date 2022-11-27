@@ -81,13 +81,26 @@
 
   <div><h1 class="h1top">Biotop</h1></div>
 
-		  <div class="gumb">
-        <a href="academic.html">
-		  <button class="btn btn-arrow btn-border">
-			<span>go back<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
-		  </button>
+
+  <div class="gumbi">
+    <div class="gumbnext" >
+      <a href="javascript:setTimeout(()=>{window.location = 'automated-city.html' },500);" >
+    <button class="btn2 btn-border2">
+    <img class="nextpr" src="noun-arrow-3134100.png">
+    </button>
     </a>
-		  </div>
+    </div>
+    <div  class="gumb" >
+      <a href="javascript:setTimeout(()=>{window.location = 'academic.html' },500);">
+    <button class="btn btn-arrow btn-border">
+    <span>GO BACK<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
+    </button>
+    </a>
+    </div>
+    </div>
+
+
+</div>
 
 
 </div>
@@ -201,7 +214,7 @@
 
 
 $(document).ready(function(){
-	$(".btn").click(function(){
+	$(".btn, .btn2").click(function(){
 	  $(".wipeout").toggleClass("wipean");
 	});
   });
