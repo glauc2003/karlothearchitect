@@ -269,6 +269,11 @@ body {
   transition: 0.3s;
 }
 
+
+.nema {
+  opacity: 0;
+}
+
 .divimg {
   cursor: pointer;
   z-index: 99999;
@@ -489,7 +494,7 @@ button {
   padding: 7px 25px;
   border: 2px solid #1d1d1d;
   transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
-  display: inline-block;
+
   cursor: pointer;
   width: 100%;
   min-width: 200px;
@@ -508,6 +513,7 @@ button {
 
 .btn:hover,
 button:hover {
+
   background: #2a2a2a;
   border-color: #2a2a2a;
   color: #fff;
@@ -533,7 +539,7 @@ button:hover {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .btn2:hover,
@@ -554,9 +560,10 @@ button:hover {
   position: relative;
   transition: all 300ms ease-out;
   will-change: transform;
+  
 }
 .btn-arrow:hover span {
-  transform: translate3d(-1rem, 0, 0);
+  transform: translate3d(0.5rem, 0, 0);
 }
 .btn-arrow svg {
   position: absolute;
@@ -565,7 +572,7 @@ button:hover {
   right: 0rem;
   opacity: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(180deg);
   transition: all 300ms ease-out;
   will-change: right, opacity;
 }
@@ -575,11 +582,12 @@ button:hover {
 }
 .btn-arrow:hover svg {
   opacity: 1;
-  right: -2rem;
+  right: 110%;
 }
 
 .nextpr {
-  width: 1rem;
+  width: 1.1rem;
+  height: 1rem;
   transition: 0.3s;
 }
 
