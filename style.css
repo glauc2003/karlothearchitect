@@ -496,7 +496,7 @@ button:hover {
   opacity: 1;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 4s;
   transform: translateX(0vw);
   overflow: hidden;
 }

@@ -7,7 +7,7 @@
       this.totalSlides = this.Slides.length;
       this.current = 0;
       this.autoPlay = true; //true or false
-      this.timeTrans = 4000; //transition time in milliseconds
+      this.timeTrans = 3500; //transition time in milliseconds
       this.IndexElements = [];
 
       for (let i = 0; i < this.totalSlides; i++) {
