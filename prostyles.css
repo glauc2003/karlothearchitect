@@ -277,13 +277,17 @@ iframe {
 }
 
 .prop {
-  width: 40vw;
-  transform: translateX(-20%);
+  width: 20vw;
+
   color: black;
-  margin-left: 31rem;
+  transform: translateX(5%);
+  margin-left: 3rem;
   font-family: montserrat;
   background-color: rgba(0, 0, 0, 0) !important;
+  display: flex;
+  justify-content: flex-end;
 }
+
 
 .img {
   width: 100%;
