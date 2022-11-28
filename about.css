@@ -26,13 +26,10 @@
     margin-left: -15rem;
 }
 
-h1 {
-    color: rgb(98, 98, 98);
-    transform: rotate(90deg);
-    font-family: montserrat;
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-top: -8rem;
+.h1top {
+    font-weight: 100 !important; 
+    justify-content: center;
+
   }
 
 
